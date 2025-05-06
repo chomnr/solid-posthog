@@ -7,8 +7,6 @@ Integrates PostHog with the SolidJS environment.
 
 ## Quick start
 
-Install it:
-
 ```bash
 npm i solid-posthog
 # or
@@ -17,13 +15,9 @@ yarn add solid-posthog
 pnpm add solid-posthog
 ```
 
-Use it:
-
 ```tsx
 import { PostHogProvider, PostHogPageViewTracker } from 'solid-posthog'
 ```
-
-App.tsx:
 
 ```tsx
 const App: Component = () => {
