@@ -44,3 +44,10 @@ const App: Component = () => {
   )
 }
 ```
+
+If you would like to enable pageviews and such just simply add the following
+component in any one of your routes.
+
+```tsx
+<PostHogPageViewTracker />
+```
