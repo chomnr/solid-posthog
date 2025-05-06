@@ -1,36 +1,24 @@
-<p>
-  <img width="100%" src="https://assets.solidjs.com/banner?type=solid-posthog&background=tiles&project=%20" alt="solid-posthog">
-</p>
+# PostHog for SolidJS
 
-# {{name_of_lib}}
+[![npm package](https://img.shields.io/npm/v/posthog-js?style=flat-square)](https://www.npmjs.com/package/posthog-js)
+[![MIT License](https://img.shields.io/badge/License-MIT-red.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
-[![pnpm](https://img.shields.io/badge/maintained%20with-pnpm-cc00ff.svg?style=for-the-badge&logo=pnpm)](https://pnpm.io/)
-
-{{desc_of_lib}}
-
-> **Note** After using this template, you have to search and replace all `{{name_of_lib}}` and similar strings
-> with appropriate texts.
->
-> `{{name_of_lib}}` should be a **kebab-case** string representing the name of you monorepo.
->
-> `{{desc_of_lib}}` should be a **Normal case** string with the description of the repository.
->
-> `{{me}}` should be a **kebab-case** string from your profile URL.
+Integrates PostHog with the SolidJS environment
 
 ## Quick start
 
 Install it:
 
 ```bash
-npm i {{name_of_lib}}
+npm i solid-posthog
 # or
-yarn add {{name_of_lib}}
+yarn add solid-posthog
 # or
-pnpm add {{name_of_lib}}
+pnpm add solid-posthog
 ```
 
 Use it:
 
 ```tsx
-import {{name_of_lib}} from '{{name_of_lib}}'
+import { PostHogProvider, PostHogPageViewTracker } from 'solid-posthog'
 ```
