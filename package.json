@@ -1,6 +1,6 @@
 {
   "name": "solid-posthog",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Allows you to PostHog within SolidJS",
   "license": "MIT",
   "author": "Zeljko Vranjes (chomnr)",
