@@ -1,6 +1,6 @@
 {
   "name": "solid-posthog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Allows you to PostHog within SolidJS",
   "license": "MIT",
   "author": "Zeljko Vranjes (chomnr)",
@@ -77,7 +77,14 @@
     "vitest": "^1.6.0"
   },
   "keywords": [
-    "solid"
+    "solid",
+    "solid-component-library",
+    "solidjs",
+    "solidjs-component",
+    "typescript",
+    "npm",
+    "posthog",
+    "posthog-component"
   ],
   "packageManager": "pnpm@9.1.1",
   "engines": {
