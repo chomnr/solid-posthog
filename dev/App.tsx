@@ -5,11 +5,7 @@ import { PostHogProvider } from 'src'
 
 const App: Component = () => {
   return (
-    <PostHogProvider
-      token="phc_3dZ82f979Q930azfVJvX3LNQYeP3CjGk6sDr6ZL1kCa"
-      apiHost="https://us.i.posthog.com/"
-      debug={true}
-    >
+    <PostHogProvider token="phc_token_here" apiHost="https://us.i.posthog.com/" debug={true}>
       <div class={styles.App}>
         <header class={styles.header}>
           <img src={logo} class={styles.logo} alt="logo" />
