@@ -5,10 +5,7 @@ import { PostHogProvider } from 'src/index'
 
 const App: Component = () => {
   return (
-    <PostHogProvider
-      apiKey="phc_4BxbHv9YACgrqvwA0OPZ9lu1L9oR0dlkd8UMvV48aRi"
-      options={{ debug: true }}
-    >
+    <PostHogProvider apiKey="leaked_my_key" options={{ debug: true }}>
       <div class={styles.App}>
         <header class={styles.header}>
           <img src={logo} class={styles.logo} alt="logo" />
