@@ -16,13 +16,13 @@ pnpm add solid-posthog
 ```
 
 ```tsx
-import { PostHogProvider, PostHogPageViewTracker } from 'solid-posthog'
+import { PostHogProvider } from 'solid-posthog'
 ```
 
 ```tsx
 const App: Component = () => {
   return (
-    <PostHogProvider token="your-posthog-token" apiHost="your-posthog-region" debug={true}>
+    <PostHogProvider apiKey="phg-token" options={{ debug: true }}>
       <div class={styles.App}>
         <header class={styles.header}>
           <img src={logo} class={styles.logo} alt="logo" />
@@ -43,11 +43,4 @@ const App: Component = () => {
     </PostHogProvider>
   )
 }
-```
-
-If you would like to enable pageviews and such just simply add the following
-component in any one of your routes.
-
-```tsx
-<PostHogPageViewTracker />
 ```
