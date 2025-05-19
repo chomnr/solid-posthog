@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitest/config'
 import solidPlugin from 'vite-plugin-solid'
+import path from 'path'
 
 export default defineConfig(({ mode }) => {
   // to test in server environment, run with "--mode ssr" or "--mode test:ssr" flag
@@ -31,11 +32,14 @@ export default defineConfig(({ mode }) => {
             include: ['test/server.test.{ts,tsx}'],
           }
         : {
-            include: ['test/*.test.{ts,tsx}'],
+            include: ['src/**/__tests__/**/*.{test,spec}.{ts,tsx,js,jsx}'],
             exclude: ['test/server.test.{ts,tsx}'],
           }),
     },
     resolve: {
+      alias: {
+        src: path.resolve(__dirname, 'src'),
+      },
       conditions: testSSR ? ['node'] : ['browser', 'development'],
     },
   }

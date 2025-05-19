@@ -93,6 +93,7 @@
   },
   "dependencies": {
     "@solidjs/router": "^0.15.3",
+    "@solidjs/testing-library": "^0.8.10",
     "posthog-js": "^1.239.1"
   }
 }
